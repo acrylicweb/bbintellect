@@ -2,18 +2,65 @@
   background-color: #113c25;
   margin: 0;
   display: flex;
-  padding: 56px 112px;
+  padding: 112px;
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end;
   color: #fcfcfb;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 .page-content-container {
   width: 60%;
   display: flex;
   flex-direction: column;
   border: 1px solid red;
+  gap: 24px;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+.page-content-container .intro-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid blue;
+}
+
+.page-content-container .follow-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid yellow;
+}
+.page-content-container .follow-sect .sm-icons {
+  display: flex;
+  gap: 16px;
+}
+.page-content-container .follow-sect .sm-icons .smicon {
+  color: #61b187;
+  height: 24px;
+  width: 24px;
+}
+.page-content-container .intro-sect .span-holder {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content-container .intro-sect .span-holder .h1-cap {
+  font-size: 20px;
+  line-height: 28px;
+}
+.page-content-container .intro-sect .span-holder .span2 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
 h1 {
   font-family: "Odor Mean Chey";
   font-size: 32px;
@@ -23,4 +70,12 @@ h2 {
   font-family: "Odor Mean Chey";
   font-size: 20px;
   line-height: 28px;
+}
+h1,
+h2 {
+  font-family: "Odor Mean Chey", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
 }
