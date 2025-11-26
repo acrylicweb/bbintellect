@@ -1,23 +1,89 @@
 .App {
-  background-color: #113c25;
   margin: 0;
   display: flex;
-  padding: 112px;
   flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-end;
+  min-height: 100vmin;
   color: #fcfcfb;
   font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  position: relative;
+  max-height: 100vmax;
+  overflow: hidden;
+}
+.App img {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.App img.desktop {
+  top: 0px;
+  left: 0px;
+  width: 50%;
+}
+
+.App img.tablet,
+.App img.mobile {
+  display: none;
 }
 .page-content-container {
-  width: 60%;
+  padding-left: 45%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  border: 1px solid red;
-  gap: 24px;
+  gap: 32px;
 }
+@media only screen and (max-width: 1440px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .App {
+    padding: 48px;
+    align-items: flex-end;
+  }
+
+  .page-content-container {
+    padding-top: 55%;
+    padding-left: 0px;
+    margin: auto;
+  }
+  .App img.desktop {
+    display: none;
+  }
+  .App img.tablet {
+    display: unset;
+    top: 0px;
+    left: 0px;
+    width: 100dvw;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .App {
+    padding: 16px;
+    height: 100dvh;
+  }
+  .page-content-container {
+    padding-top: 0px;
+    width: 100%;
+    gap: 24px;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin: unset;
+  }
+  .App img.mobile {
+    display: unset;
+    top: 0px;
+    left: 0px;
+    width: 100dvw;
+  }
+  .App img.tablet,
+  .App img.desktop {
+    display: none;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -28,14 +94,12 @@ a {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  border: 1px solid blue;
 }
 
 .page-content-container .follow-sect {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  border: 1px solid yellow;
 }
 .page-content-container .follow-sect .sm-icons {
   display: flex;
@@ -45,6 +109,10 @@ a {
   color: #61b187;
   height: 24px;
   width: 24px;
+}
+.page-content-container .follow-sect .sm-icons .smicon:hover {
+  color: #77c79d;
+  cursor: pointer;
 }
 .page-content-container .intro-sect .span-holder {
   display: flex;
@@ -78,4 +146,68 @@ h2 {
   font-style: normal;
   padding: 0;
   margin: 0;
+}
+
+button {
+  background-color: #61b187;
+  color: #113c25;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #347854;
+}
+
+button:active {
+  cursor: pointer;
+  background-color: #77c79d;
+}
+
+.email a {
+  color: #61b187;
+}
+
+.email a:hover {
+  color: #77c79d;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+form .sect {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+form .sect label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #f7f6f2;
+}
+form .sect input {
+  padding: 4px;
+  border: none;
+  background-color: #f4f3ee;
+  border-radius: 4px;
+  color: #113c25;
+  height: 32px;
+}
+
+form .sect input::placeholder {
+  color: #296746;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.mailinglist-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
