@@ -1,5 +1,5 @@
 import "./App.css";
-import { FaTiktok, FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaTiktok, FaYoutube, FaInstagram } from "react-icons/fa";
 import Form from "./form";
 
 function App() {
