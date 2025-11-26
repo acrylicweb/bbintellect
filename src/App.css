@@ -62,7 +62,8 @@
 @media only screen and (max-width: 560px) {
   .App {
     padding: 16px;
-    height: 100dvh;
+    min-height: 100vmax;
+    max-height: unset;
   }
   .page-content-container {
     padding-top: 0px;
