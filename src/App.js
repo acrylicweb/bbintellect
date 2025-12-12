@@ -22,9 +22,13 @@ function App() {
       />
       <div className="page-content-container">
         <div className="intro-sect">
-          <h1>Building biblical intellect</h1>
+          <img
+            src="https://d14n4fsapeewqj.cloudfront.net/temp/bbilogo.webp"
+            alt="bbi logo"
+            className="bbilogo"
+          />
           <div className="span-holder">
-            <span className="h1-cap">The hub of the epignosis of Christ</span>
+            <span className="h1-cap">Hub of the Epignosis of Christ</span>
             <span className="span2">
               <i>with Pastor Eldridge Asamoah</i>
             </span>

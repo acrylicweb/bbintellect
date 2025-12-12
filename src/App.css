@@ -16,6 +16,9 @@
   overflow: hidden;
   z-index: -1;
 }
+.App img.bbilogo {
+  position: unset;
+}
 
 .App img.desktop {
   top: 0px;
@@ -41,6 +44,7 @@
   .App {
     padding: 48px;
     align-items: flex-end;
+    max-height: unset;
   }
 
   .page-content-container {
