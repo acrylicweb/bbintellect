@@ -87,6 +87,14 @@
   .App img.desktop {
     display: none;
   }
+
+  .App img.bbilogo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 5;
+    width: 100px;
+  }
 }
 
 a {
