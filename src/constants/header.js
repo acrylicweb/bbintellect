@@ -27,12 +27,7 @@ const Header = () => {
         <Link to="/" onClick={scrollToTop}>
           <img
             className={`header-logo ${scrolled ? "scrolled" : ""}`}
-            src="#"
-            alt="BBI Logo"
-          />
-          <img
-            className={`header-logo-white ${scrolled ? "scrolled" : ""}`}
-            src="#"
+            src="https://d14n4fsapeewqj.cloudfront.net/temp/bbilogo.webp"
             alt="BBI Logo"
           />
         </Link>
