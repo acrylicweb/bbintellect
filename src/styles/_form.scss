@@ -1,0 +1,54 @@
+@use "variables";
+@use "mixins";
+@use "global";
+
+.form-sect-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  //border: 1px solid green;
+}
+
+.form-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  //border: 1px solid yellow;
+}
+
+.form-sect-holder .field {
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-sect-holder button {
+  align-self: flex-start;
+}
+.form-sect-holder .field label {
+  font-weight: 600;
+}
+
+.form-sect-holder .field input,
+.form-sect-holder .field textarea {
+  border-radius: 8px;
+  border: 1px solid #184b4e;
+  background: #f4f3ee;
+  padding: 4px 8px;
+}
+
+.form-sect-holder .field input::placeholder,
+.form-sect-holder .field textarea::placeholder {
+  color: #257378;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.form-sent-emptyspace {
+  border: 2px solid #184b4e;
+  margin-bottom: 32px;
+  border-radius: 16px;
+  padding: 24px;
+  background-color: #f4f3ee;
+}
