@@ -1,0 +1,250 @@
+@use "variables";
+@use "mixins";
+@use "global";
+
+.header {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 112px;
+  z-index: 400;
+}
+
+.header.scrolled {
+  background-color: orange;
+  transition: 0.7s;
+  color: white;
+}
+
+.logo {
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 132px;
+  height: 66px;
+}
+.logo a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.header-logo.scrolled {
+  opacity: 1;
+  transition: 0.7s;
+}
+.header-logo-white {
+  opacity: 0;
+}
+.header-logo-white.scrolled {
+  opacity: 1;
+  transition: 0.7s;
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+.desktop-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alt-menu {
+  display: none;
+}
+
+.alt-menu-dropdown {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.desktop-menu ul {
+  list-style-type: none;
+  margin: auto auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-menu li a {
+  font-size: 16px;
+  font-weight: 900;
+  display: block;
+  text-align: center;
+  padding: 0px;
+  margin-left: 24px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.desktop-menu li a:hover {
+  text-decoration: underline 2px;
+  text-underline-offset: 4px;
+}
+
+.desktop-menu li a:visited {
+  text-decoration: none;
+  color: none;
+}
+
+@media screen and (max-width: 1439px) {
+}
+
+/* ipad header*/
+@media screen and (max-width: 1024px) {
+  .header {
+    margin: 0%;
+    padding: 8px 48px;
+    align-items: center;
+    height: 88px;
+  }
+
+  .menu-icons {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .menu-icon,
+  .close-icon {
+    font-size: 64px;
+    line-height: 1;
+    margin-top: 6px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 450;
+    position: relative;
+  }
+
+  .close-icon {
+    margin-right: -16px;
+    color: white;
+  }
+
+  .menu-icon {
+    margin-right: -8px;
+    color: black;
+  }
+
+  .menu-icon.scrolled {
+    margin-right: -8px;
+    color: white;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .alt-menu {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .alt-menu span {
+    display: inline-block;
+    padding: 0;
+  }
+
+  .alt-menu-dropdown {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: max-content;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    padding: 0px;
+    margin: 0;
+  }
+
+  .alt-menu-dropdown.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .alt-menu-dropdown.hiding {
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+  }
+
+  .alt-menu-dropdown .menuop {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    background: green;
+    width: 320px;
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 24px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .alt-menu-dropdown .menuop div {
+    background: yellowgreen;
+    text-align: center;
+    margin: 8px 0px;
+  }
+
+  .alt-menu-dropdown .menuop div a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding: 16px;
+  }
+
+  .alt-menu-dropdown .menuop div a:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .header {
+    padding: 8px 32px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .header {
+    padding: 8px 16px;
+    height: 88px;
+  }
+
+  .alt-menu-dropdown .menuop {
+    padding-top: 70px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 260px;
+  }
+}
