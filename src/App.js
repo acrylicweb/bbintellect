@@ -39,7 +39,12 @@ function App() {
             <h2>Sign up to our mailing list</h2>
             <span>Get weekly devotionals from January 2026</span>
           </div>
-          <Form />
+          <Form
+            clientKey="buildingbibleintellect"        // matches the CLIENTS key in Lambda
+            formId="Mailing"               // form type: mailing, contact, artist, etc.
+            apiUrl="https://7t0xfgk6y1.execute-api.eu-west-2.amazonaws.com/mailinglistform"
+          />
+
         </div>
         <div className="follow-sect">
           <h2>Follow us on social media</h2>

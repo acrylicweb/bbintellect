@@ -1,12 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
-import { FaCheckCircle, FaTimes } from "react-icons/fa";
+import { FaCheckCircle, FaTimes } from "react-icons/fa"; // import correct icons here
 
-const Form = () => {
-  //const [setFormVisible] = useState(true);
-
+const Form = ({ clientKey = "buildingbibleintellect", formId = "Mailing", apiUrl }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(null);
   const [error, setError] = useState(null);
@@ -17,26 +16,25 @@ const Form = () => {
     setSuccess(null);
     setError(null);
 
-    const formData = new FormData();
-    formData.append("name", name);
-    formData.append("email", email);
-    formData.append("form_name", "bbi temp");
-    formData.append("access_key", "b2305347-394a-4378-9a93-11539db1737c"); // Replace with your Web3Forms API key
-
     try {
-      const response = await axios.post(
-        "https://api.web3forms.com/submit",
-        formData
-      );
+      const response = await axios.post(apiUrl, {
+        client: clientKey,
+        formid: formId,
+        name,
+        email,
+        message,
+      });
 
-      if (response.data.success) {
+      if (response.status === 200) {
         setSuccess("Your details have been submitted successfully!");
         setName("");
         setEmail("");
+        setMessage("");
       } else {
         setError("Something went wrong, please try again.");
       }
     } catch (err) {
+      console.error(err);
       setError("Error occurred. Please try again.");
     } finally {
       setLoading(false);
@@ -57,6 +55,7 @@ const Form = () => {
             required
           />
         </div>
+
         <div className="sect">
           <label>Your email address:</label>
           <input
@@ -68,6 +67,19 @@ const Form = () => {
             required
           />
         </div>
+
+        {/* Optional message field for some forms */}
+        {(formId === "Contact" || formId === "Artist") && (
+          <div className="sect">
+            <label>Message:</label>
+            <textarea
+              name="message"
+              placeholder="Enter your message..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+          </div>
+        )}
 
         <button type="submit" disabled={loading}>
           {loading ? "Sending..." : "Submit"}
