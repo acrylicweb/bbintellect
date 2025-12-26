@@ -1,0 +1,79 @@
+@use "variables";
+@use "mixins";
+@use "global";
+
+.footer-container {
+  display: flex;
+  background-color: #f3ddaa;
+  color: #0c2627;
+  padding: 112px;
+  gap: 112px;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 24px;
+  @media only screen and (max-width: 1440px) {
+    padding: 80px;
+    gap: 80px;
+  }
+  @media only screen and (max-width: 1024px) {
+    padding: 48px;
+    gap: 48px;
+  }
+  @media only screen and (max-width: 800px) {
+    padding: 32px;
+    gap: 32px;
+  }
+  @media only screen and (max-width: 560px) {
+    padding: 32px 16px;
+    gap: 40px;
+    flex-direction: column;
+  }
+}
+.footer-container .logo {
+  width: auto;
+  height: 84px;
+  //  border: 1px solid blue;
+  display: flex;
+}
+.footer-container .logo img {
+  // border: 1px solid red;
+  height: 100%;
+  width: auto;
+}
+
+.footer-container .browse,
+.footer-container .stayintouch {
+  //border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @media only screen and (max-width: 560px) {
+    text-align: center;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.footer-container .smcontainer {
+  display: flex;
+  gap: 8px;
+  .icon {
+    height: 24px;
+    width: 24px;
+  }
+  @media only screen and (max-width: 560px) {
+    margin: 0px auto;
+  }
+}
+.footer-container h5 {
+  font-weight: 600;
+}

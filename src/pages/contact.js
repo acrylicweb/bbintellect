@@ -8,7 +8,7 @@ const ContactPage = () => {
         <div className="contact-hero">
           <h1>Get in touch with us</h1>
           <span className="h1-cap">
-            Ask us about any Bible related questions,
+            Ask us any Bible related questions,
             <br /> we are ready to help
           </span>
         </div>
