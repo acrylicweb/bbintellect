@@ -11,8 +11,8 @@ const Form = ({ formid }) => {
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(null);
   const [error, setError] = useState(null);
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [selectedTime, setSelectedTime] = useState(null);
+  //const [selectedDate, setSelectedDate] = useState(null);
+  //const [selectedTime, setSelectedTime] = useState(null);
   if (!form) return null;
   // handle input changes dynamically
   const handleChange = (e) => {
