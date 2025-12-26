@@ -1,0 +1,119 @@
+@use "variables";
+@use "mixins";
+@use "global";
+
+.home-page-container .sect2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d6ded4;
+  padding: 112px;
+  gap: 32px;
+  .mobileh2 {
+    display: none;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 50%;
+    max-width: 456px;
+  }
+  img {
+    width: 50%;
+    max-width: 456px;
+    aspect-ratio: 1;
+    // border: 1px solid red;
+  }
+  @media only screen and (max-width: 1440px) {
+    padding: 80px;
+    gap: 24px;
+  }
+  @media only screen and (max-width: 1024px) {
+    padding: 48px;
+  }
+  @media only screen and (max-width: 800px) {
+    padding: 32px;
+    flex-direction: column;
+
+    .mobileh2 {
+      display: unset;
+    }
+    .text h2 {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      order: 1;
+    }
+    .text {
+      width: unset;
+      order: 2;
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 560px) {
+    padding: 32px 16px;
+  }
+}
+.home-page-container .sect3 {
+  background-color: #0c2627;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 112px;
+  align-items: flex-start;
+  gap: 24px;
+
+  a {
+    align-self: flex-end;
+  }
+  @media only screen and (max-width: 1440px) {
+    padding: 80px;
+  }
+  @media only screen and (max-width: 1024px) {
+    padding: 48px;
+  }
+  @media only screen and (max-width: 800px) {
+    padding: 32px;
+  }
+  @media only screen and (max-width: 560px) {
+    padding: 32px 16px;
+  }
+}
+.home-page-container .homemailing {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  padding: 56px 112px;
+  .form {
+    width: 50%;
+    //border: 1px solid green;
+  }
+  img {
+    //border: 1px solid red;
+    position: absolute;
+    height: 130%;
+    bottom: 0;
+    left: 15%;
+  }
+  @media only screen and (max-width: 1440px) {
+    padding: 40px 80px;
+  }
+  @media only screen and (max-width: 1024px) {
+    padding: 24px 48px;
+  }
+  @media only screen and (max-width: 800px) {
+    padding: 40px 80px;
+    .form {
+      width: 100%;
+    }
+    img {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 560px) {
+    padding: 32px 16px;
+  }
+}

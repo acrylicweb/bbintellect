@@ -96,7 +96,7 @@ const Form = ({ formid }) => {
     <div className="form-component-container">
       <form onSubmit={handleSubmit}>
         <div className="form-intro">
-          {form.formtitle && <h1>{form.formtitle}</h1>}
+          {form.formtitle && <h2>{form.formtitle}</h2>}
           {form.formintro && <p>{form.formintro}</p>}
         </div>
         {/*  <input type="hidden" name="form_name" value={form.formname} />*/}
