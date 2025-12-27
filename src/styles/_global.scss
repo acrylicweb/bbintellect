@@ -13,7 +13,10 @@ h2,
 h3 {
   font-family: "Playfair Display", serif;
 }
-
+h2 {
+  font-size: 32px;
+  list-style: 40px;
+}
 h1 {
   font-size: 40px;
   list-style: 48px;
@@ -37,4 +40,12 @@ button {
   background: #2b878c;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
   color: #fff;
+  &:hover {
+    cursor: pointer;
+    background-color: #257378;
+  }
+  &:active {
+    background-color: #8ad7db;
+    color: #000;
+  }
 }
