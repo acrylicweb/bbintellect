@@ -39,6 +39,11 @@ const Header = () => {
             <Link className="menu-item" to="/" onClick={scrollToTop}>
               Home
             </Link>
+          </li>{" "}
+          <li>
+            <Link className="menu-item" to="/about" onClick={scrollToTop}>
+              About us
+            </Link>
           </li>
           <li>
             <Link className="menu-item" to="/exegesis" onClick={scrollToTop}>
@@ -76,6 +81,18 @@ const Header = () => {
             >
               Home
             </Link>
+          </div>{" "}
+          <div>
+            <Link
+              className="menu-it"
+              to="/about"
+              onClick={() => {
+                toggleDropdown();
+                scrollToTop();
+              }}
+            >
+              About us
+            </Link>
           </div>
           <div>
             <Link
@@ -89,7 +106,6 @@ const Header = () => {
               Biblical Exegesis
             </Link>
           </div>
-
           <div>
             <Link
               className="menu-it"

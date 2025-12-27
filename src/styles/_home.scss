@@ -2,6 +2,74 @@
 @use "mixins";
 @use "global";
 
+.home-page-container .home-hero {
+  background-color: #000;
+  background-image: url("https://d14n4fsapeewqj.cloudfront.net/home/desktophomehero.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 90vh;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  padding: 112px;
+  .text {
+    margin-top: 48px;
+    justify-self: flex-end;
+    border: 1px solid red;
+    h1 {
+      color: #fff;
+    }
+    .h1-cap {
+      color: #f3ddaa;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+  }
+  .ipad-hero {
+    display: none;
+  }
+  @media only screen and (max-width: 1440px) {
+    padding: 80px;
+  }
+  @media only screen and (max-width: 1024px) {
+    background-color: unset;
+    padding: 48px;
+    background-image: none;
+    height: max-content;
+    margin-bottom: -2px;
+    background-size: cover;
+    aspect-ratio: 834/1113;
+    .text {
+      text-align: end;
+      width: 60%;
+
+      @media only screen and (max-width: 650px) {
+        margin-top: 80px;
+        width: 50%;
+      }
+    }
+    .ipad-hero {
+      display: unset;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      //border: 1px solid red;
+      height: auto;
+      z-index: -5;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    background-color: unset;
+    padding: 32px;
+  }
+  @media only screen and (max-width: 560px) {
+    background-color: unset;
+    padding: 16px;
+  }
+}
+
 .home-page-container .sect2 {
   display: flex;
   align-items: center;
@@ -51,6 +119,7 @@
       width: unset;
       order: 2;
       text-align: center;
+      align-items: center;
     }
   }
   @media only screen and (max-width: 560px) {
@@ -103,6 +172,9 @@
   }
   @media only screen and (max-width: 1024px) {
     padding: 24px 48px;
+    img {
+      left: 10%;
+    }
   }
   @media only screen and (max-width: 800px) {
     padding: 40px 80px;
