@@ -2,19 +2,22 @@ import { formdata } from "../data/formdata";
 import formfields from "../data/formfields";
 import React, { useState } from "react";
 import axios from "axios";
-import { Icon } from "@iconify/react/dist/iconify.js";
+import { Icon } from "@iconify/react";
 
 const Form = ({ formid }) => {
   const form = formdata.find((f) => f.formid === formid);
+
+  const clientKey = "buildingbibleintellect"; // must match Lambda CLIENTS
+  const apiUrl = "https://7t0xfgk6y1.execute-api.eu-west-2.amazonaws.com/form";
 
   const [formValues, setFormValues] = useState({});
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(null);
   const [error, setError] = useState(null);
-  //const [selectedDate, setSelectedDate] = useState(null);
-  //const [selectedTime, setSelectedTime] = useState(null);
+
   if (!form) return null;
-  // handle input changes dynamically
+
+  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues((prev) => ({ ...prev, [name]: value }));
@@ -27,7 +30,7 @@ const Form = ({ formid }) => {
     setSent(null);
 
     try {
-      // Minimal validation for email
+      // Basic email validation (unchanged)
       if (formValues.Email) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(formValues.Email)) {
@@ -37,55 +40,35 @@ const Form = ({ formid }) => {
         }
       }
 
-      // Build FormData for Web3Forms
-      const formData = new FormData();
-      formData.append("access_key", "b2305347-394a-4378-9a93-11539db1737c"); // <-- Replace with your actual key
-      formData.append("form_name", form.formname); // <-- Must match your Web3Forms form name
-      formData.append("name", formValues.Name?.trim() || "Anonymous");
-      formData.append(
-        "email",
-        formValues.Email?.trim() || "noemail@placeholder.com"
-      );
-      formData.append(
-        "message",
-        formValues.Message?.trim() || "New form submission"
-      );
+      // Build payload for Lambda
+      const payload = {
+        client: clientKey,
+        formid: formid,
+        name: formValues.Name?.trim() || "Anonymous",
+        email: formValues.Email?.trim() || "noemail@placeholder.com",
+        message: formValues.Message?.trim() || "New form submission",
+        fields: {},
+      };
 
-      // Append all other form fields dynamically
+      // Add all extra dynamic fields
       Object.keys(formValues).forEach((key) => {
         if (!["Name", "Email", "Message"].includes(key)) {
-          formData.append(key, formValues[key]);
+          payload.fields[key] = formValues[key];
         }
       });
 
-      // Optional: log FormData for debugging
-      for (let [key, value] of formData.entries()) {
-        console.log(`${key}: ${value}`);
-      }
+      const response = await axios.post(apiUrl, payload);
 
-      // Send request to Web3Forms
-      const response = await axios.post(
-        "https://api.web3forms.com/submit",
-        formData,
-        {
-          headers: { "Content-Type": "multipart/form-data" },
-        }
-      );
-
-      console.log("Web3Forms response:", response.data);
-
-      if (response.data.success) {
+      if (response.status === 200) {
         setSent(true);
         setFormValues({});
         setTimeout(() => setSent(null), 5000);
       } else {
-        setError(
-          response.data.message || "Something went wrong, please try again."
-        );
+        setError("Something went wrong, please try again.");
         setTimeout(() => setError(null), 5000);
       }
     } catch (err) {
-      console.error("Form submit error:", err.response || err.message || err);
+      console.error("Form submit error:", err);
       setError("Something went wrong, please try again");
     } finally {
       setLoading(false);
@@ -99,9 +82,8 @@ const Form = ({ formid }) => {
           {form.formtitle && <h2>{form.formtitle}</h2>}
           {form.formintro && <p>{form.formintro}</p>}
         </div>
-        {/*  <input type="hidden" name="form_name" value={form.formname} />*/}
 
-        {/* Success message */}
+        {/* Success */}
         {sent && (
           <>
             {form.success && (
@@ -127,7 +109,7 @@ const Form = ({ formid }) => {
           </>
         )}
 
-        {/* Error message */}
+        {/* Error */}
         {error && (
           <div className="form-sent-emptyspace-error">
             <img
@@ -142,32 +124,36 @@ const Form = ({ formid }) => {
           </div>
         )}
 
-        {/* Render fields if not sent/error */}
+        {/* Fields */}
         {!sent && !error && (
-          <>
-            <div className="form-sect-holder">
-              {form.sect1fields && (
-                <div className="form-sect">
-                  {form.sect1header && <h5>{form.sect1header}</h5>}
-                  {form.sect1cap && (
-                    <span className="sectcap">{form.sect1cap}</span>
+          <div className="form-sect-holder">
+            {[1, 2, 3, 4, 5].map((num) => {
+              const fieldsKey = form[`sect${num}fields`];
+              if (!fieldsKey) return null;
+
+              return (
+                <div key={num} className="form-sect">
+                  {form[`sect${num}header`] && (
+                    <h5>{form[`sect${num}header`]}</h5>
                   )}
-                  {form.sect1fields?.map((fieldsKey, index) => {
-                    const field = formfields[fieldsKey];
+                  {form[`sect${num}cap`] && (
+                    <span className="sectcap">{form[`sect${num}cap`]}</span>
+                  )}
+
+                  {fieldsKey.map((key, index) => {
+                    const field = formfields[key];
                     if (!field) return null;
 
-                    const value = formValues[fieldsKey] || "";
+                    const value = formValues[key] || "";
 
                     return (
                       <div key={index} className="field">
-                        <label htmlFor={`field-${fieldsKey}`}>
-                          {field.label}
-                        </label>
+                        <label htmlFor={`field-${key}`}>{field.label}</label>
 
                         {field.lines && field.lines > 1 ? (
                           <textarea
-                            id={`field-${fieldsKey}`}
-                            name={fieldsKey}
+                            id={`field-${key}`}
+                            name={key}
                             placeholder={field.placeholder}
                             rows={field.lines}
                             value={value}
@@ -177,8 +163,8 @@ const Form = ({ formid }) => {
                         ) : (
                           <input
                             type={field.type || "text"}
-                            id={`field-${fieldsKey}`}
-                            name={fieldsKey}
+                            id={`field-${key}`}
+                            name={key}
                             placeholder={field.placeholder}
                             value={value}
                             onChange={handleChange}
@@ -189,205 +175,33 @@ const Form = ({ formid }) => {
                     );
                   })}
                 </div>
+              );
+            })}
+
+            <button type="submit" disabled={loading}>
+              {loading ? (
+                <>
+                  Sending{" "}
+                  <Icon className="icon" icon="line-md:loading-loop" />
+                </>
+              ) : sent ? (
+                <>
+                  Sent <Icon className="icon" icon="line-md:check-all" />
+                </>
+              ) : error ? (
+                <>
+                  Try again <Icon className="icon" icon="pajamas:retry" />
+                </>
+              ) : (
+                <>
+                  {form.btntext}{" "}
+                  {form.btnicon && (
+                    <Icon className="icon" icon={form.btnicon} />
+                  )}
+                </>
               )}
-              {form.sect2fields && (
-                <div className="form-sect">
-                  {form.sect2header && <h5>{form.sect2header}</h5>}
-                  {form.sect2fields?.map((fieldsKey, index) => {
-                    const field = formfields[fieldsKey];
-                    if (!field) return null;
-
-                    const value = formValues[fieldsKey] || "";
-
-                    return (
-                      <div key={index} className="field">
-                        <label htmlFor={`field-${fieldsKey}`}>
-                          {field.label}
-                        </label>
-
-                        {field.lines && field.lines > 1 ? (
-                          <textarea
-                            id={`field-${fieldsKey}`}
-                            name={fieldsKey}
-                            placeholder={field.placeholder}
-                            rows={field.lines}
-                            value={value}
-                            onChange={handleChange}
-                            required
-                          />
-                        ) : (
-                          <input
-                            type={field.type || "text"}
-                            id={`field-${fieldsKey}`}
-                            name={fieldsKey}
-                            placeholder={field.placeholder}
-                            value={value}
-                            onChange={handleChange}
-                            required
-                          />
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
-              {form.sect3fields && (
-                <div className="form-sect">
-                  {form.sect3header && <h5>{form.sect3header}</h5>}
-                  {form.sect3fields?.map((fieldsKey, index) => {
-                    const field = formfields[fieldsKey];
-                    if (!field) return null;
-
-                    const value = formValues[fieldsKey] || "";
-
-                    return (
-                      <div key={index} className="field">
-                        <label htmlFor={`field-${fieldsKey}`}>
-                          {field.label}
-                        </label>
-
-                        {field.lines && field.lines > 1 ? (
-                          <textarea
-                            id={`field-${fieldsKey}`}
-                            name={fieldsKey}
-                            placeholder={field.placeholder}
-                            rows={field.lines}
-                            value={value}
-                            onChange={handleChange}
-                            required
-                          />
-                        ) : (
-                          <input
-                            type={field.type || "text"}
-                            id={`field-${fieldsKey}`}
-                            name={fieldsKey}
-                            placeholder={field.placeholder}
-                            value={value}
-                            onChange={handleChange}
-                            required
-                          />
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
-              {form.sect4fields && (
-                <div className="form-sect">
-                  {form.sect4header && <h5>{form.sect4header}</h5>}
-                  {form.sect4fields?.map((fieldsKey, index) => {
-                    const field = formfields[fieldsKey];
-                    if (!field) return null;
-
-                    const value = formValues[fieldsKey] || "";
-
-                    return (
-                      <div key={index} className="field">
-                        <label htmlFor={`field-${fieldsKey}`}>
-                          {field.label}
-                        </label>
-
-                        {field.lines && field.lines > 1 ? (
-                          <textarea
-                            id={`field-${fieldsKey}`}
-                            name={fieldsKey}
-                            placeholder={field.placeholder}
-                            rows={field.lines}
-                            value={value}
-                            onChange={handleChange}
-                            required
-                          />
-                        ) : (
-                          <input
-                            type={field.type || "text"}
-                            id={`field-${fieldsKey}`}
-                            name={fieldsKey}
-                            placeholder={field.placeholder}
-                            value={value}
-                            onChange={handleChange}
-                            required
-                          />
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              )}{" "}
-              {form.sect5fields && (
-                <div className="form-sect">
-                  {form.sect5header && <h5>{form.sect5header}</h5>}
-                  {form.sect5fields?.map((fieldsKey, index) => {
-                    const field = formfields[fieldsKey];
-                    if (!field) return null;
-
-                    const value = formValues[fieldsKey] || "";
-
-                    return (
-                      <div key={index} className="field">
-                        <label htmlFor={`field-${fieldsKey}`}>
-                          {field.label}
-                        </label>
-
-                        {field.lines && field.lines > 1 ? (
-                          <textarea
-                            id={`field-${fieldsKey}`}
-                            name={fieldsKey}
-                            placeholder={field.placeholder}
-                            rows={field.lines}
-                            value={value}
-                            onChange={handleChange}
-                            required
-                          />
-                        ) : (
-                          <input
-                            type={field.type || "text"}
-                            id={`field-${fieldsKey}`}
-                            name={fieldsKey}
-                            placeholder={field.placeholder}
-                            value={value}
-                            onChange={handleChange}
-                            required
-                          />
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
-              {/*   {form.calendar && (
-                <Calendar
-                  selectedDate={selectedDate}
-                  setSelectedDate={setSelectedDate}
-                  selectedTime={selectedTime}
-                  setSelectedTime={setSelectedTime}
-                />
-              )}{" "}*/}
-              {/* Buttons */}
-              <button type="submit" disabled={loading}>
-                {loading ? (
-                  <>
-                    Sending{" "}
-                    <Icon className="icon" icon="line-md:loading-loop" />
-                  </>
-                ) : sent ? (
-                  <>
-                    Sent <Icon className="icon" icon="line-md:check-all" />
-                  </>
-                ) : error ? (
-                  <>
-                    Try again <Icon className="icon" icon="pajamas:retry" />
-                  </>
-                ) : (
-                  <>
-                    {form.btntext}{" "}
-                    {form.btnicon && (
-                      <Icon className="icon" icon={form.btnicon} />
-                    )}
-                  </>
-                )}
-              </button>
-            </div>
-          </>
+            </button>
+          </div>
         )}
       </form>
     </div>
