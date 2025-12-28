@@ -2,7 +2,13 @@ import { useState } from "react";
 import axios from "axios";
 import { FaCheckCircle, FaTimes } from "react-icons/fa"; // import correct icons here
 
-const Form = ({ clientKey = "buildingbibleintellect", formId = "Mailing List", apiUrl }) => {
+const Form = ({
+  formId = ""
+}) => {
+
+  const clientKey = "buildingbibleintellect";
+  const apiUrl = "https://7t0xfgk6y1.execute-api.eu-west-2.amazonaws.com/form";
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");

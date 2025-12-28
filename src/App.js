@@ -42,7 +42,6 @@ function App() {
           <Form
             clientKey="buildingbibleintellect"        // matches the CLIENTS key in Lambda
             formId="Mailing"               // form type: mailing, contact, artist, etc.
-            apiUrl="https://7t0xfgk6y1.execute-api.eu-west-2.amazonaws.com/mailinglistform"
           />
 
         </div>
