@@ -40,7 +40,6 @@ function App() {
             <span>Get weekly devotionals from January 2026</span>
           </div>
           <Form
-            clientKey="buildingbibleintellect"        // matches the CLIENTS key in Lambda
             formId="Mailing"               // form type: mailing, contact, artist, etc.
           />
 
