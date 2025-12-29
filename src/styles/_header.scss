@@ -20,6 +20,7 @@
   background-color: #184b4e;
   transition: 0.7s;
   color: white;
+  border-bottom: 1px solid #fff;
 }
 
 .logo {
@@ -207,7 +208,7 @@
     align-items: stretch;
     justify-content: center;
     flex-direction: column;
-    background: green;
+    background: #184b4e;
     width: 320px;
     margin: 0;
     padding-top: 70px;
@@ -217,7 +218,7 @@
   }
 
   .alt-menu-dropdown .menuop div {
-    background: yellowgreen;
+    background: #257378;
     text-align: center;
     margin: 8px 0px;
   }
