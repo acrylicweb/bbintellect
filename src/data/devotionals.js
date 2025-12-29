@@ -2,7 +2,7 @@ export const devotionaldata = [
   {
     id: 1,
     releasedate: "1st January 2026",
-    title: "WHAT IS THE GOSPEL OF CHRIST?",
+    title: "THE GOSPEL OF CHRIST",
     introscripture: (
       <>
         <strong>
@@ -25,14 +25,6 @@ export const devotionaldata = [
     ),
     fullentry: (
       <>
-        <strong>
-          ROMANS 1:15-16 (KJV) So, as much as in me is, I am ready to preach the
-          gospel to you that are at Rome also. For I am not ashamed of the
-          gospel of Christ: for it is the power of God unto salvation to every
-          one that believeth; to the Jew first, and also to the Greek.{" "}
-        </strong>
-        <br />
-        <br />
         In the New Testament, the Greek translation for the gospel is
         ‘Euangelion’, which means “good news”. It is a combination of two Greek
         words, ‘eu’, which means good, and ‘angelion’, which means “messenger or
@@ -166,49 +158,45 @@ export const devotionaldata = [
         the curses under the Old Covenant. He paid the price for us, so that we
         do not have to suffer for it. Now we are delivered, justified, and
         reconciled back to God by the death of Christ Jesus. This is the
-        ultimate good news we preach in Christ Jesus. Amen. <br />
+        ultimate good news we preach in Christ Jesus. Amen.
+      </>
+    ),
+
+    provided: (
+      <>
+        <h3>Scriptural References:</h3>
+        1. <strong>Romans 10:15 (KJV) -</strong> And how shall they preach,
+        except they be sent? as it is written, How beautiful are the feet of
+        them that preach the gospel of peace, and bring glad tidings of good
+        things! <br />
         <br />
-        <br />
-        <strong>Scriptural References:</strong>
-        <br />
-        <br />
-        1. <strong>Romans 10:15 KJV</strong> - And how shall they preach, except
-        they be sent? as it is written, How beautiful are the feet of them that
-        preach the gospel of peace, and bring glad tidings of good things!{" "}
-        <br />
-        <br />
-        2. <strong>Acts 13:32 KJV</strong> - And we declare unto you glad
+        2. <strong>Acts 13:32 (KJV) -</strong> And we declare unto you glad
         tidings, how that the promise which was made unto the fathers, <br />
         <br />
-        3. <strong>Ephesians 6:15 KJV</strong> - And your feet shod with the
+        3. <strong>Ephesians 6:15 (KJV) -</strong> And your feet shod with the
         preparation of the gospel of peace; <br />
         <br />
-        4. <strong>Hebrews 2:14-15 KJV</strong> - Forasmuch then as the children
-        are partakers of flesh and blood, he also himself likewise took part of
-        the same; that through death he might destroy him that had the power of
-        death, that is, the devil; <br />
+        4. <strong>Hebrews 2:14-15 (KJV) -</strong> Forasmuch then as the
+        children are partakers of flesh and blood, he also himself likewise took
+        part of the same; that through death he might destroy him that had the
+        power of death, that is, the devil; And deliver them who through fear of
+        death were all their lifetime subject to bondage. <br />
         <br />
-        And deliver them who through fear of death were all their lifetime
-        subject to bondage. <br />
-        <br />
-        5. <strong>Deuteronomy 21:22-23 KJV</strong> - And if a man have
+        5. <strong>Deuteronomy 21:22-23 (KJV) -</strong> And if a man have
         committed a sin worthy of death, and he be to be put to death, and thou
-        hang him on a tree: <br />
+        hang him on a tree: His body shall not remain all night upon the tree,
+        but thou shalt in any wise bury him that day; (for he that is hanged is
+        accursed of God;) that thy land be not defiled, which the Lord thy God
+        giveth thee for an inheritance. <br />
         <br />
-        His body shall not remain all night upon the tree, but thou shalt in any
-        wise bury him that day; (for he that is hanged is accursed of God;) that
-        thy land be not defiled, which the Lord thy God giveth thee for an
-        inheritance. <br />
-        <br />
-        6. <strong>1 Corinthians 15:56 KJV</strong> - The sting of death is sin;
+        6. <strong>1 Corinthians 15:56 KJV -</strong> The sting of death is sin;
         and the strength of sin is the law. <br />
         <br />
-        7. <strong>Galatians 3:13-14 KJV</strong> - Christ hath redeemed us from
-        the curse of the law, being made a curse for us: for it is written,
-        Cursed is every one that hangeth on a tree: <br />
-        <br />
-        That the blessing of Abraham might come on the Gentiles through Jesus
-        Christ; that we might receive the promise of the Spirit through faith.
+        7. <strong>Galatians 3:13-14 (KJV) -</strong> Christ hath redeemed us
+        from the curse of the law, being made a curse for us: for it is written,
+        Cursed is every one that hangeth on a tree: That the blessing of Abraham
+        might come on the Gentiles through Jesus Christ; that we might receive
+        the promise of the Spirit through faith.
       </>
     ),
     img: "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesisimage.webp",
