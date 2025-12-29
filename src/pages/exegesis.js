@@ -44,7 +44,7 @@ const ExegesisPage = () => {
         )}
         <div className="sect3">
           <div className="form">
-            <Form formid="mailinglistform" />
+            <Form formId="Mailing" />
           </div>
         </div>
       </div>

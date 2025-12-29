@@ -14,7 +14,7 @@ const ContactPage = () => {
         </div>
         <div className="contact-main">
           <div className="form">
-            <Form formid="contactform" />
+            <Form formId="Contact" />
           </div>
 
           <div className="details-container">

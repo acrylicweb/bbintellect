@@ -60,7 +60,7 @@ const HomePage = () => {
             alt=""
           />
           <div className="form">
-            <Form formid="mailinglistform" />
+            <Form formId="Mailing" />
           </div>
         </div>
       </div>
