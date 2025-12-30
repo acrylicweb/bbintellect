@@ -2,8 +2,11 @@ import React, { useState, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { IoMenu, IoClose } from "react-icons/io5";
 import scrollToTop from "../components/scrollToTop";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation(); // Hook to get the current location
+  const [activePage, setActivePage] = useState(location.pathname);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -21,13 +24,24 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const logoSrc =
+    location.pathname === "/exegesis" ||
+    location.pathname === "/exegesis/gospelofchrist"
+      ? "https://d14n4fsapeewqj.cloudfront.net/temp/ogbbilogo.webp"
+      : "https://d14n4fsapeewqj.cloudfront.net/temp/bbilogo.webp";
+  const menuColour =
+    location.pathname === "/exegesis" ||
+    location.pathname === "/exegesis/gospelofchrist"
+      ? "og-color"
+      : "https://d14n4fsapeewqj.cloudfront.net/temp/bbilogo.webp";
+
   return (
     <div className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
         <Link to="/" onClick={scrollToTop}>
           <img
             className={`header-logo ${scrolled ? "scrolled" : ""}`}
-            src="https://d14n4fsapeewqj.cloudfront.net/temp/bbilogo.webp"
+            src={logoSrc}
             alt="BBI Logo"
           />
         </Link>

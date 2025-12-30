@@ -7,7 +7,12 @@ const HomePage = () => {
       <div className="page-container home-page-container">
         <div className="sect home-hero">
           <img
-            src="https://d14n4fsapeewqj.cloudfront.net/home/ipadhomehero.webp"
+            src="https://d14n4fsapeewqj.cloudfront.net/home/desktop-home-hero.webp"
+            alt=""
+            className="desktop-hero"
+          />
+          <img
+            src="https://d14n4fsapeewqj.cloudfront.net/home/ipad-home-hero.webp"
             alt=""
             className="ipad-hero"
           />
