@@ -9,7 +9,7 @@ const DevWrapper = () => {
   if (!devpage) return <h2>Service Not Found</h2>;
   return (
     <>
-      <IndividualDevotional {...devpage} />;
+      <IndividualDevotional {...devpage} />
     </>
   );
 };
