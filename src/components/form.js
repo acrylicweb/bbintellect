@@ -45,41 +45,47 @@ const Form = ({ formId = "" }) => {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-sect-holder">
       <form onSubmit={handleSubmit}>
-        <div className="sect">
-          <label>Your name:</label>
-          <input
-            type="text"
-            name="name"
-            placeholder="Enter your name..."
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
+        <div className="form-sect">
+          <div className="field">
+            <label>Your name:</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name..."
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
         </div>
 
-        <div className="sect">
-          <label>Your email address:</label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your email address..."
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+        <div className="form-sect">
+          <div className="field">
+            <label>Your email address:</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address..."
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
         </div>
 
         {(formId === "Contact" || formId === "Artist") && (
-          <div className="sect">
-            <label>Message:</label>
-            <textarea
-              name="message"
-              placeholder="Enter your message..."
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
+          <div className="form-sect">
+            <div className="field">
+              <label>Message:</label>
+              <textarea
+                name="message"
+                placeholder="Enter your message..."
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
+            </div>
           </div>
         )}
 
