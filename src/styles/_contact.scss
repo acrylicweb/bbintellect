@@ -81,8 +81,9 @@
     color: #000;
   }
 }
-.contact-main .form .field:first-child label {
+.contact-main .form .form-sect:first-child .field label {
   color: #fff;
+  //border: 1px solid red;
   @media only screen and (max-width: 800px) {
     color: #000;
   }

@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation(); // Hook to get the current location
-  const [activePage, setActivePage] = useState(location.pathname);
+  //  const [activePage, setActivePage] = useState(location.pathname);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -27,12 +27,6 @@ const Header = () => {
   const isExegesisRoute =
     location.pathname === "/exegesis" ||
     location.pathname === "/exegesis/gospelofchrist";
-
-  const logoSrc = isExegesisRoute
-    ? scrolled
-      ? "https://d14n4fsapeewqj.cloudfront.net/temp/bbilogo.webp" // scrolled logo
-      : "https://d14n4fsapeewqj.cloudfront.net/temp/ogbbilogo.webp" // top-of-page logo
-    : "https://d14n4fsapeewqj.cloudfront.net/temp/bbilogo.webp";
 
   return (
     <div

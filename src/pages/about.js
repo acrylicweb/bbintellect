@@ -4,7 +4,7 @@ const AboutPage = () => {
       <div className="page-container about-page-container">
         <div className="hero">
           <img
-            src="https://d14n4fsapeewqj.cloudfront.net/about/about-hero.webp"
+            src="https://d14n4fsapeewqj.cloudfront.net/about/about-hero-image.webp"
             alt=""
           />
           <h1>About BBI</h1>

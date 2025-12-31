@@ -199,7 +199,7 @@ export const devotionaldata = [
         the promise of the Spirit through faith.
       </>
     ),
-    img: "https://d14n4fsapeewqj.cloudfront.net/devotionals/dev-image.webp",
+    img: "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesisimg.webp",
     link: "/gospelofchrist",
     slug: "gospelofchrist",
     imgname: "devotional img",
