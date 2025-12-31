@@ -22,6 +22,18 @@
   color: white;
   border-bottom: 1px solid #fff;
 }
+.header.exegesis-theme {
+  background: rgba(255, 255, 255, 0.15); /* semi-transparent */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); /* Safari */
+}
+
+.header.exegesis-theme.scrolled {
+  color: #fff;
+  background-color: #184b4e;
+  backdrop-filter: unset;
+  -webkit-backdrop-filter: unset;
+}
 
 .logo {
   padding: 0;

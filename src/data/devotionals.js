@@ -189,8 +189,8 @@ export const devotionaldata = [
         accursed of God;) that thy land be not defiled, which the Lord thy God
         giveth thee for an inheritance. <br />
         <br />
-        6. <strong>1 Corinthians 15:56 KJV -</strong> The sting of death is sin;
-        and the strength of sin is the law. <br />
+        6. <strong>1 Corinthians 15:56 (KJV) -</strong> The sting of death is
+        sin; and the strength of sin is the law. <br />
         <br />
         7. <strong>Galatians 3:13-14 (KJV) -</strong> Christ hath redeemed us
         from the curse of the law, being made a curse for us: for it is written,
@@ -199,7 +199,7 @@ export const devotionaldata = [
         the promise of the Spirit through faith.
       </>
     ),
-    img: "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesisimage.webp",
+    img: "https://d14n4fsapeewqj.cloudfront.net/devotionals/dev-image.webp",
     link: "/gospelofchrist",
     slug: "gospelofchrist",
     imgname: "devotional img",

@@ -38,7 +38,8 @@
     }
   }
 
-  .ipad-hero {
+  .ipad-hero,
+  .mobile-hero {
     display: none;
   }
   @media only screen and (max-width: 1440px) {
@@ -60,6 +61,10 @@
         margin-top: 80px;
         width: 50%;
       }
+      @media only screen and (max-width: 560px) {
+        margin-top: 80px;
+        width: 60%;
+      }
     }
     .ipad-hero {
       display: unset;
@@ -70,6 +75,9 @@
       //border: 1px solid red;
       height: auto;
       z-index: -5;
+      @media only screen and (max-width: 560px) {
+        display: none;
+      }
     }
   }
   @media only screen and (max-width: 800px) {
@@ -79,6 +87,17 @@
   @media only screen and (max-width: 560px) {
     background-color: unset;
     padding: 16px;
+
+    aspect-ratio: 390/810;
+    .mobile-hero {
+      display: unset;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: auto;
+      z-index: -5;
+    }
   }
   @media only screen and (min-width: 1700px) {
     padding: 224px;
@@ -174,6 +193,10 @@
   .form {
     width: 50%;
     //border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 10;
   }
   img {
     //border: 1px solid red;

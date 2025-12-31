@@ -1,3 +1,5 @@
+import { HashLink as Link } from "react-router-hash-link";
+import scrollToTop from "../components/scrollToTop";
 const IndividualDevotional = ({
   releasedate,
   title,
@@ -17,6 +19,11 @@ const IndividualDevotional = ({
       <div className="intro">{introscripture}</div>
       <div className="text">{fullentry}</div>
       <div className="scriptures">{provided}</div>
+      <div className="back">
+        <Link to="/exegesis" onClick={scrollToTop}>
+          <button>Back to all entries</button>
+        </Link>
+      </div>
     </div>
   );
 };

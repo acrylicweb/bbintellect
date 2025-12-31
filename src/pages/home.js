@@ -1,5 +1,6 @@
 import Form from "../components/form";
 import { HashLink as Link } from "react-router-hash-link";
+import scrollToTop from "../components/scrollToTop";
 import DevotionalPreview from "../components/devotionals";
 const HomePage = () => {
   return (
@@ -12,9 +13,14 @@ const HomePage = () => {
             className="desktop-hero"
           />
           <img
-            src="https://d14n4fsapeewqj.cloudfront.net/home/ipad-home-hero.webp"
+            src="https://d14n4fsapeewqj.cloudfront.net/home/home-ipadhero.webp"
             alt=""
             className="ipad-hero"
+          />{" "}
+          <img
+            src="https://d14n4fsapeewqj.cloudfront.net/home/home-mobilehero.webp"
+            alt=""
+            className="mobile-hero"
           />
           <div className="text">
             <h1>Building Biblical Intellect </h1>
@@ -34,7 +40,7 @@ const HomePage = () => {
               by decrypting its seemingly paradoxical elements in order to build
               the faith of believers at any level of their journey.
             </p>{" "}
-            <Link to="/about">
+            <Link to="/about" onClick={scrollToTop}>
               {" "}
               <button>Learn more</button>
             </Link>
@@ -54,7 +60,7 @@ const HomePage = () => {
           <div className="entries">
             <DevotionalPreview />
           </div>{" "}
-          <Link to="/exegesis">
+          <Link to="/exegesis" onClick={scrollToTop}>
             {" "}
             <button>View all entries</button>
           </Link>
@@ -65,6 +71,13 @@ const HomePage = () => {
             alt=""
           />
           <div className="form">
+            <div className="intro">
+              <h2>Sign up to our mailing list!</h2>
+              <span>
+                Join our community to gain exclusive access to new release
+                notifications, announcements website updates and more!
+              </span>
+            </div>
             <Form formId="Mailing" />
           </div>
         </div>

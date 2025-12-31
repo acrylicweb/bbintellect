@@ -24,24 +24,27 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const logoSrc =
+  const isExegesisRoute =
     location.pathname === "/exegesis" ||
-    location.pathname === "/exegesis/gospelofchrist"
-      ? "https://d14n4fsapeewqj.cloudfront.net/temp/ogbbilogo.webp"
-      : "https://d14n4fsapeewqj.cloudfront.net/temp/bbilogo.webp";
-  const menuColour =
-    location.pathname === "/exegesis" ||
-    location.pathname === "/exegesis/gospelofchrist"
-      ? "og-color"
-      : "https://d14n4fsapeewqj.cloudfront.net/temp/bbilogo.webp";
+    location.pathname === "/exegesis/gospelofchrist";
+
+  const logoSrc = isExegesisRoute
+    ? scrolled
+      ? "https://d14n4fsapeewqj.cloudfront.net/temp/bbilogo.webp" // scrolled logo
+      : "https://d14n4fsapeewqj.cloudfront.net/temp/ogbbilogo.webp" // top-of-page logo
+    : "https://d14n4fsapeewqj.cloudfront.net/temp/bbilogo.webp";
 
   return (
-    <div className={`header ${scrolled ? "scrolled" : ""}`}>
+    <div
+      className={`header ${scrolled ? "scrolled" : ""} ${
+        isExegesisRoute ? "exegesis-theme" : ""
+      }`}
+    >
       <div className="logo">
         <Link to="/" onClick={scrollToTop}>
           <img
             className={`header-logo ${scrolled ? "scrolled" : ""}`}
-            src={logoSrc}
+            src="https://d14n4fsapeewqj.cloudfront.net/temp/bbilogo.webp"
             alt="BBI Logo"
           />
         </Link>

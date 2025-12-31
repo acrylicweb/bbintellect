@@ -18,8 +18,8 @@ const Footer = () => {
         <div className="browse">
           <h5>BROWSE</h5>
           <div className="links">
-            <Link to="/" onClick={scrollToTop}>
-              Home
+            <Link to="/about" onClick={scrollToTop}>
+              About
             </Link>
             <Link to="/exegesis" onClick={scrollToTop}>
               Biblical Exegesis

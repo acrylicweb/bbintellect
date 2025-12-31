@@ -44,6 +44,13 @@ const ExegesisPage = () => {
         )}
         <div className="sect3">
           <div className="form">
+            <div className="intro">
+              <h2>Sign up to our mailing list!</h2>
+              <span>
+                Join our community to gain exclusive access to new release
+                notifications, announcements website updates and more!
+              </span>
+            </div>
             <Form formId="Mailing" />
           </div>
         </div>

@@ -1,0 +1,102 @@
+@use "variables";
+@use "mixins";
+@use "global";
+
+.about-page-container {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    aspect-ratio: 1024/500;
+    img {
+      position: absolute;
+      object-fit: cover;
+      object-position: top;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -5;
+    }
+    @media only screen and (max-width: 1024px) {
+      aspect-ratio: 744/496;
+    }
+    h1 {
+      color: #fff;
+    }
+  }
+  .sect2 {
+    background-color: #0c2627;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 56px 224px;
+    @media only screen and (max-width: 1440px) {
+      padding: 40px 160px;
+    }
+    @media only screen and (max-width: 1024px) {
+      padding: 48px 48px;
+    }
+    @media only screen and (max-width: 800px) {
+      padding: 32px 32px;
+    }
+    @media only screen and (max-width: 560px) {
+      padding: 32px 16px;
+    }
+    @media only screen and (min-width: 1600px) {
+      padding: 56px 336px;
+    }
+  }
+  .sect3 {
+    background-color: #d6ded4;
+    display: flex;
+    gap: 32px;
+    padding: 56px 224px;
+    h4 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    @media only screen and (max-width: 1440px) {
+      padding: 40px 160px;
+    }
+    @media only screen and (max-width: 1024px) {
+      padding: 48px 48px;
+      flex-direction: column;
+    }
+    @media only screen and (max-width: 800px) {
+      padding: 32px 32px;
+    }
+    @media only screen and (max-width: 560px) {
+      padding: 32px 16px;
+    }
+  }
+  .sect4 {
+    background-color: #0c2627;
+    padding: 56px 224px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    img {
+      width: 300px;
+    }
+    @media only screen and (max-width: 1440px) {
+      padding: 40px 160px;
+    }
+    @media only screen and (max-width: 1024px) {
+      padding: 48px 48px;
+    }
+    @media only screen and (max-width: 800px) {
+      padding: 32px 32px;
+    }
+    @media only screen and (max-width: 560px) {
+      padding: 32px 16px;
+    }
+    @media only screen and (min-width: 1600px) {
+      padding: 56px 336px;
+    }
+  }
+}

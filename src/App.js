@@ -6,6 +6,7 @@ import ContactPage from "./pages/contact";
 import HomePage from "./pages/home";
 import ExegesisPage from "./pages/exegesis";
 import DevWrapper from "./components/devWrapper";
+import AboutPage from "./pages/about";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/about" element={<AboutPage />} />
         <Route exact path="/contact" element={<ContactPage />} />
         <Route exact path="/exegesis" element={<ExegesisPage />} />
         <Route path="/exegesis/:slug" element={<DevWrapper />} />
