@@ -17,7 +17,6 @@ const ExegesisPage = () => {
         </div>
         <div className="latest-entry-intro">
           <div className="datentitle">
-            <span>{latest.releasedate}</span>
             <h1>{latest.title}</h1>
           </div>
           <div>{latest.intropara}</div>

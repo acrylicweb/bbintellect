@@ -1,7 +1,6 @@
 import { HashLink as Link } from "react-router-hash-link";
 import scrollToTop from "../components/scrollToTop";
 const IndividualDevotional = ({
-  releasedate,
   title,
   fullentry,
   introscripture,
@@ -13,7 +12,6 @@ const IndividualDevotional = ({
     <div className="individual-devotional-container">
       <div className="hero">
         <img src={img} alt={imgname} />
-        <span>{releasedate}</span>
         <h1>{title}</h1>
       </div>
       <div className="intro">{introscripture}</div>

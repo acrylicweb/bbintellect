@@ -28,9 +28,9 @@ const HomePage = () => {
           </div>
         </div>
         <div className="sect sect2">
-          <h2 className="mobileh2">Rooted in the finished work</h2>
+          <h2 className="mobileh2">What is BBI</h2>
           <div className="text">
-            <h2>Rooted in the finished work</h2>
+            <h2>What is BBI</h2>
             <p>
               BBI is a training and equipping platform that aims to build people
               with the accurate revelation and understanding of the Word of God
