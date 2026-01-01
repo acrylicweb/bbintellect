@@ -8,17 +8,17 @@ const HomePage = () => {
       <div className="page-container home-page-container">
         <div className="sect home-hero">
           <img
-            src="https://d14n4fsapeewqj.cloudfront.net/home/desktop-home-hero.webp"
+            src="https://d14n4fsapeewqj.cloudfront.net/home/homedesktophero.webp"
             alt=""
             className="desktop-hero"
           />
           <img
-            src="https://d14n4fsapeewqj.cloudfront.net/home/home-ipadhero.webp"
+            src="https://d14n4fsapeewqj.cloudfront.net/home/homeipadhero.webp"
             alt=""
             className="ipad-hero"
           />{" "}
           <img
-            src="https://d14n4fsapeewqj.cloudfront.net/home/home-mobilehero.webp"
+            src="https://d14n4fsapeewqj.cloudfront.net/home/home-mobilehero1.webp"
             alt=""
             className="mobile-hero"
           />

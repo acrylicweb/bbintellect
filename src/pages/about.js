@@ -103,7 +103,7 @@ const AboutPage = () => {
             the catalyst for innumerable life transformations.   <br />
             <br />
             The primary goal of his teaching ministry is to painstakingly convey
-            the message of Christ, to avoid any representation as to the
+            the message of Christ, to avoid any misrepresentation about the
             character, person and intent of God. Pastor Eldridge firmly believes
             that the intentions of God are not meant to be hidden, however, it
             is the Holy Spirit that plays a crucial role in revealing Christ

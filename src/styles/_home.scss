@@ -31,7 +31,7 @@
     top: 0;
     left: 0;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     z-index: -5;
     @media only screen and (max-width: 1024px) {
       display: none;
@@ -52,7 +52,7 @@
     height: max-content;
     margin-bottom: -2px;
     background-size: cover;
-    aspect-ratio: 744/649;
+    aspect-ratio: 744/709;
     .text {
       text-align: end;
       width: 60%;
@@ -75,6 +75,7 @@
       //border: 1px solid red;
       height: auto;
       z-index: -5;
+      object-fit: top;
       @media only screen and (max-width: 560px) {
         display: none;
       }
@@ -88,7 +89,7 @@
     background-color: unset;
     padding: 16px;
 
-    aspect-ratio: 390/810;
+    aspect-ratio: 390/615;
     .mobile-hero {
       display: unset;
       position: absolute;
@@ -97,6 +98,7 @@
       width: 100vw;
       height: auto;
       z-index: -5;
+      object-fit: top;
     }
   }
   @media only screen and (min-width: 1700px) {
