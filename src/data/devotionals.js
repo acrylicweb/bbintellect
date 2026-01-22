@@ -203,7 +203,7 @@ export const devotionaldata = [
     imgname: "devotional img",
   },
 
-  {
+  /*{
     id: 2,
     title: "CHRIST HAS SPOILED PRINCIPALITIES AND POWERS",
     introscripture: (
@@ -351,5 +351,5 @@ export const devotionaldata = [
     link: "/christspoiledprincipalitiesandpowers",
     slug: "christspoiledprincipalitiesandpowers",
     imgname: "devotional img",
-  },
+  },*/
 ];
