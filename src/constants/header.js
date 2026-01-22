@@ -26,6 +26,7 @@ const Header = () => {
 
   const isExegesisRoute =
     location.pathname === "/exegesis" ||
+    location.pathname === "/exegesis/christspoiledprincipalitiesandpowers" ||
     location.pathname === "/exegesis/gospelofchrist";
 
   return (
