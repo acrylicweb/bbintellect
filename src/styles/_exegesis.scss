@@ -35,29 +35,38 @@
     background-color: #38afb61a;
     z-index: 5;
 
+    @media only screen and (max-width: 1480px) {
+      margin: -232px 112px 112px 112px;
+    }
     @media only screen and (max-width: 1440px) {
       padding: 80px;
-      margin: -160px 80px 80px 80px;
+      margin: -144px 80px 80px 80px;
     }
-
+    @media only screen and (max-width: 1353px) {
+      margin: -200px 80px 80px 80px;
+    }
     @media only screen and (max-width: 1024px) {
       padding: 48px;
-      margin: -120px 48px 48px 48px;
+      margin: -176px 48px 48px 48px;
     }
     @media only screen and (max-width: 800px) {
       padding: 32px;
-      margin: -104px 32px 32px 32px;
+      margin: -152px 32px 32px 32px;
     }
-    @media only screen and (max-width: 606px) {
-      margin: -152px 48px 48px 48px;
+    @media only screen and (max-width: 722px) {
+      margin: -208px 32px 32px 32px;
     }
     @media only screen and (max-width: 560px) {
       padding: 16px;
-      margin: -72px 16px 16px 16px;
+      margin: -88px 16px 16px 16px;
+      h1 {
+        font-size: 24px;
+        line-height: 32px;
+      }
     }
-    @media only screen and (max-width: 447px) {
-      padding: 16px;
-      margin: -112px 16px 16px 16px;
+
+    @media only screen and (max-width: 420px) {
+      margin: -120px 16px 16px 16px;
     }
 
     .datentitle {
@@ -65,6 +74,27 @@
       flex-direction: column;
       gap: 0px;
       color: #fff;
+    }
+  }
+  .sect2 {
+    padding: 0px 112px 56px 112px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @media only screen and (max-width: 1440px) {
+      padding: 0px 80px 40px 80px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      padding: 0px 48px 48px 48px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      padding: 0px 32px 32px 32px;
+    }
+
+    @media only screen and (max-width: 560px) {
+      padding: 0px 16px 16px 16px;
     }
   }
 

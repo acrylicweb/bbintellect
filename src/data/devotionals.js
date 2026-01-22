@@ -55,7 +55,7 @@ export const devotionaldata = [
         victory won by their army meant the avoidance of the harsh treatment and
         slavery they would have likely received had the rival kingdom bested
         them in battle. This is another reason that the gospel is called the
-        gospel of peace in the New Testament{" "}
+        gospel of peace in the New Testament
         <strong>(See Ephesians 6:15).</strong> We see the same concept of this
         good news of triumph with the children of Israel: <br />
         <br />
@@ -75,7 +75,7 @@ export const devotionaldata = [
           foretold it. Yes, it is I.” How beautiful on the mountains are the
           feet of those who bring good news, who proclaim peace, who bring good
           tidings, who proclaim salvation, who say to Zion, “Your God reigns!”
-          (Isaiah 52:1-7) NIV.{" "}
+          (Isaiah 52:1-7) NIV.
         </strong>
         <br />
         <br />
@@ -87,7 +87,7 @@ export const devotionaldata = [
         The message highlighted that God was not going to permit their permanent
         captivity; but rather, the time for their redemption was approaching.
         This was a message of victory and triumph for the Israelites in
-        Captivity, and that is why Isaiah called it good news and good tidings.{" "}
+        Captivity, and that is why Isaiah called it good news and good tidings.
         <br />
         <br />
         From the above illustrations, it can be asserted that the gospel is the
@@ -96,7 +96,7 @@ export const devotionaldata = [
         world?’ In the New Testament, the Apostle Paul called the gospel of
         Christ the message of the Cross. This means that whenever the gospel is
         preached, it must reveal the victorious message of the Cross. The cross
-        is the message of triumph that Jesus Christ wants humanity to hear.{" "}
+        is the message of triumph that Jesus Christ wants humanity to hear.
         <br />
         <br />
         <strong>
@@ -104,7 +104,7 @@ export const devotionaldata = [
           wisdom of words, lest the cross of Christ should be made of none
           effect. For the preaching of the cross is to them that perish
           foolishness; but unto us which are saved it is the power of God. (1
-          Corinthians 1:17-18) KJV.{" "}
+          Corinthians 1:17-18) KJV.
         </strong>
         <br />
         <br />
@@ -117,9 +117,7 @@ export const devotionaldata = [
         consequence of the wages of sin owed to God. These wages led us into a
         life of slavery under Satan’s control. Satan had authority over us.
         However, Jesus set us free from Satan’s power by paying the penalty for
-        our transgressions on the cross <strong>
-          (See Hebrews 2:14-15).{" "}
-        </strong>{" "}
+        our transgressions on the cross <strong>(See Hebrews 2:14-15).</strong>
         In fact, the Greek word translated as 'saved' is 'Sozo,’ which also
         means to be delivered from the enemies’ molestation. This message of
         victory and triumph stems from the fact that Jesus’ death on the cross
@@ -131,7 +129,7 @@ export const devotionaldata = [
         <strong>
           We will rejoice in thy salvation, and in the name of our God we will
           set up our banners: the Lord fulfil all thy petitions. (Psalms 20:5)
-          KJV.{" "}
+          KJV.
         </strong>
         <br />
         <br />
@@ -143,13 +141,13 @@ export const devotionaldata = [
         this problem, the law kept humanity guilty before God and brought about
         the consequences of not fulfilling it. It was well-known among the
         Israelites that anyone who broke the law and was worthy of death was
-        automatically considered cursed{" "}
+        automatically considered cursed
         <strong>(See Deuteronomy 21:22-23) </strong>. In fact, humanity was
         cursed because we could not fulfill the law. The devil exploited this
-        debt through the Law, constantly keeping us under the power of sin{" "}
+        debt through the Law, constantly keeping us under the power of sin
         <strong>(See 1 Corinthians 15:56) </strong>. That’s why Jesus came to
         die on the cross. He came to take on this cursed nature on our behalf,
-        so that we receive blessings in Christ Jesus{" "}
+        so that we receive blessings in Christ Jesus
         <strong>(See Galatians 3:13-14) </strong>. <br />
         <br />
         These and more are the reasons why the gospel is the good news of
@@ -202,6 +200,156 @@ export const devotionaldata = [
     img: "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesisimg.webp",
     link: "/gospelofchrist",
     slug: "gospelofchrist",
+    imgname: "devotional img",
+  },
+
+  {
+    id: 2,
+    title: "CHRIST HAS SPOILED PRINCIPALITIES AND POWERS",
+    introscripture: (
+      <>
+        <strong>
+          COLOSSIANS 2:14-15 (KJV)
+          <br />
+          Blotting out the handwriting of ordinances that was against us, which
+          was contrary to us, and took it out of the way, nailing it to his
+          cross; And having spoiled principalities and powers, he made a shew of
+          them openly, triumphing over them in it.
+        </strong>
+      </>
+    ),
+    intropara: (
+      <>
+        The cross accomplished many great things for believers, key amongst them
+        is that Christ stripped off the weapons the devil previously employed
+        against us. The scripture paints a picture of the means and method by
+        which Jesus Christ rendered the enemy powerless . . .
+      </>
+    ),
+    fullentry: (
+      <>
+        The cross accomplished many great things for believers, key amongst them
+        is that Christ stripped off the weapons the devil previously employed
+        against us. The scripture above paints a picture of the means and method
+        by which Jesus Christ rendered the enemy powerless against believers.
+        The original Greek translation for ‘having spoiled’ as used in the
+        scripture above is ‘Apekdyomai’, which means ‘to disarm.’ In ancient
+        biblical times, Apekdyomai was used when kings and armies embarked
+        impetuously into other nations in a bid to completely defeat them in
+        war.
+        <br />
+        <br />
+        In those days, after the kings destroyed cities, the defeated king and
+        his high-ranking army officials were taken captive and dragged in the
+        open for all to see them in their defeated state. The idea was to
+        publicise the defeat and expose the defeated party to public ridicule,
+        mockery, and humiliation on their journey back to the victors’ kingdom.
+        This is what Apostle Paul alluded to when he said Jesus ‘made a show of
+        them openly.’ After the defeated king and officials arrived, the
+        conquering king would strip them of their armour and military clothing.
+        In extreme cases, these men would be left half- or sometimes, completely
+        naked, to accentuate their frailty and powerlessness. <br />
+        <br />
+        The next step in the lead-up to their execution was a very common
+        practice by armies in ancient times. The conquering king would cut off
+        the toes and thumbs of the defeated kings and officials, before finally
+        executing them. The idea behind this was permanent incapacitation: once
+        their toes and thumbs were cut off, they would never be able to hold
+        weapons and stand in battle again. We see this happen with one of the
+        Canaanite Kings, Adoni-Bezek, after being taken by the armies of Judah.
+        <br />
+        <br />
+        <strong>
+          And Judah went up; and the Lord delivered the Canaanites and the
+          Perizzites into their hand: and they slew of them in Bezek ten
+          thousand men. And they found Adonibezek in Bezek: and they fought
+          against him, and they slew the Canaanites and the Perizzites. But
+          Adonibezek fled; and they pursued after him, and caught him, and cut
+          off his thumbs and his great toes. And Adonibezek said, Threescore and
+          ten kings, having their thumbs and their great toes cut off, gathered
+          their meat under my table: as I have done, so God hath requited me.
+          And they brought him to Jerusalem, and there he died. Judges 1:4-7
+          (KJV).
+        </strong>
+        <br />
+        <br />
+        This is the picture the Apostle Paul sought to imprint in our hearts as
+        he communicated what happened on the cross. As Jesus was nailed on the
+        cross, his death led to the disarmament of the armoury of the devil and
+        his officials. He stripped them of their ability to hold any weapon
+        against believers, or even dare to stand against us. The death of Jesus
+        on the cross took place on earth for all humanity to see, so that all
+        could witness the public humiliation of Satan and his armies. Two
+        thousand years ago, many gathered to witness the crucifixion of our Lord
+        Jesus Christ on Calvary, a proven historical fact.
+        <br />
+        <br />
+        If Jesus disarmed the devil, the implication is that the devil once
+        wielded weapons. This raises the question: what weapons did the devil
+        have? What weapons had the devil been using against humanity all that
+        time? The answer is in the verses before chapter fifteen.
+        <br />
+        <br />
+        <strong>
+          Blotting out the handwriting of ordinances that was against us, which
+          was contrary to us, and took it out of the way, nailing it to his
+          cross (Colossians 2:14) KJV.
+        </strong>
+        <br />
+        <br />
+        In context, we notice that what was nailed on the cross was “the
+        handwriting of the ordinances.” In the scriptures, this was also known
+        as the Law and commandments of Moses.
+        <br />
+        <br />
+        <strong>
+          Having abolished in his flesh the enmity, even the law of commandments
+          contained in ordinances; for to make in himself of twain one new man,
+          so making peace; (Ephesians 2:15 (KJV).
+        </strong>
+        <br />
+        <br />
+        All the commandments given to Moses at Mount Sinai were contained in the
+        Ordinances and are also known collectively as “The Law of Moses.” This
+        is further supported by verses 16 and 17 of Colossians 2, which
+        reference certain grounds for judgment under the Mosaic covenant.
+        Additionally, the scripture calls the Law ‘handwritings’ for a reason.
+        In Greek, the word ‘handwriting’ is translated as ‘Cheirographhon’, and
+        it describes a hand-signed legal note by a debtor acknowledging their
+        indebtedness. This means that the Law contains evidence of our admission
+        of guilt before God. The scriptures teach us that no one can be
+        justified by the works of the law, and the purpose of the law was to
+        make us guilty before God. The Law was introduced to expose humanity to
+        our sin, not to overcome our sin.
+        <br />
+        <br />
+        <strong>
+          Now we know that what things soever the law saith, it saith to them
+          who are under the law: that every mouth may be stopped, and all the
+          world may become guilty before God. Therefore, by the deeds of the law
+          there shall no flesh be justified in his sight: for by the law is the
+          knowledge of sin (Romans 3:19-20) KJV.
+        </strong>
+        <br />
+        <br />
+        This is why the devil employed the Law as a weapon against humanity. The
+        Law of Moses aided the devil in executing the demands of his profession.
+        The bible calls him the ‘Accuser of the brethren’
+        <strong> (See Revelation 12:10), </strong>
+        and what better way to accuse humanity than with The Law. This legal
+        note that bore humanity’s admission of guilt was good enough to condemn
+        us to eternal death and suffering. However, the scripture tells us that
+        Christ spoiled principalities and powers. Jesus Christ paid the debt we
+        owed God on the cross, and so we are free from the weapons of the devil.
+        Satan has lost his power over the believer and cannot hold anything
+        against us anymore. Walk in the consciousness of this reality and see
+        your life express great glory forever. Amen. <br />
+        <br />
+      </>
+    ),
+    img: "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesisimg.webp",
+    link: "/christspoiledprincipalitiesandpowers",
+    slug: "christspoiledprincipalitiesandpowers",
     imgname: "devotional img",
   },
 ];

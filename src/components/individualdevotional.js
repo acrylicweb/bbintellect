@@ -16,7 +16,7 @@ const IndividualDevotional = ({
       </div>
       <div className="intro">{introscripture}</div>
       <div className="text">{fullentry}</div>
-      <div className="scriptures">{provided}</div>
+      {provided && <div className="scriptures">{provided}</div>}
       <div className="back">
         <Link to="/exegesis" onClick={scrollToTop}>
           <button>Back to all entries</button>
