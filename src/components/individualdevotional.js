@@ -5,13 +5,13 @@ const IndividualDevotional = ({
   fullentry,
   introscripture,
   provided,
-  img,
+  notextimg,
   imgname,
 }) => {
   return (
     <div className="individual-devotional-container">
       <div className="hero">
-        <img src={img} alt={imgname} />
+        <img src={notextimg} alt={imgname} />
         <h1>{title}</h1>
       </div>
       <div className="intro">{introscripture}</div>

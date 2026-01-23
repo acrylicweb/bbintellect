@@ -13,12 +13,12 @@ const ExegesisPage = () => {
     <>
       <div className="page-container exegesis-page-container">
         <div className="hero">
-          <img src={latest.img} alt={latest.imgname} />
-        </div>
-        <div className="latest-entry-intro">
+          <img src={latest.notextimg} alt={latest.imgname} />{" "}
           <div className="datentitle">
             <h1>{latest.title}</h1>
           </div>
+        </div>
+        <div className="latest-entry-intro">
           <div>{latest.intropara}</div>
           <Link to={`/exegesis${latest.link}`} onClick={scrollToTop}>
             <button>Read more</button>

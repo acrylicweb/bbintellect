@@ -197,13 +197,15 @@ export const devotionaldata = [
         the promise of the Spirit through faith.
       </>
     ),
-    img: "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesisimg.webp",
+    img: "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesispic.webp",
+    notextimg:
+      "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesispicturee.webp",
     link: "/gospelofchrist",
     slug: "gospelofchrist",
     imgname: "devotional img",
   },
 
-  /*{
+  {
     id: 2,
     title: "CHRIST HAS SPOILED PRINCIPALITIES AND POWERS",
     introscripture: (
@@ -347,9 +349,26 @@ export const devotionaldata = [
         <br />
       </>
     ),
-    img: "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesisimg.webp",
+    img: "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesispic.webp",
+    notextimg:
+      "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesispicturee.webp",
     link: "/christspoiledprincipalitiesandpowers",
     slug: "christspoiledprincipalitiesandpowers",
     imgname: "devotional img",
-  },*/
+    provided: (
+      <>
+        <h3>Scriptural References:</h3>
+        1. <strong>1. Colossians 2:16-17 (KJV) -</strong> Let no man therefore
+        judge you in meat, or in drink, or in respect of an holyday, or of the
+        new moon, or of the sabbath days: Which are a shadow of things to come;
+        but the body is of Christ. <br />
+        <br />
+        2. <strong>2. Revelation 12:10 (KJV) -</strong> And I heard a loud voice
+        saying in heaven, Now is come salvation, and strength, and the kingdom
+        of our God, and the power of his Christ: for the accuser of our brethren
+        is cast down, which accused them before our God day and night. <br />
+        <br />
+      </>
+    ),
+  },
 ];

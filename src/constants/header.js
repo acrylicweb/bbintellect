@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { IoMenu, IoClose } from "react-icons/io5";
 import scrollToTop from "../components/scrollToTop";
-import { useLocation } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
 
 const Header = () => {
-  const location = useLocation(); // Hook to get the current location
+  //const location = useLocation(); // Hook to get the current location
   //  const [activePage, setActivePage] = useState(location.pathname);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -24,16 +24,15 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const isExegesisRoute =
+  /*const isExegesisRoute =
     location.pathname === "/exegesis" ||
     location.pathname === "/exegesis/christspoiledprincipalitiesandpowers" ||
-    location.pathname === "/exegesis/gospelofchrist";
+    location.pathname === "/exegesis/gospelofchrist";*/
 
   return (
     <div
-      className={`header ${scrolled ? "scrolled" : ""} ${
-        isExegesisRoute ? "exegesis-theme" : ""
-      }`}
+      className={`header ${scrolled ? "scrolled" : ""}
+      `}
     >
       <div className="logo">
         <Link to="/" onClick={scrollToTop}>
