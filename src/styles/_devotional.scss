@@ -16,6 +16,11 @@
     padding: 24px;
     color: #000;
     gap: 8px;
+    img {
+      // border: 1px solid red;
+      width: 100%;
+      aspect-ratio: 224/126;
+    }
     //border: 1px solid yellow;
     &:nth-child(1) {
       background-color: #f3ddaa80;
