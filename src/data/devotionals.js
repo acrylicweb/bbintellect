@@ -371,4 +371,178 @@ export const devotionaldata = [
       </>
     ),
   },
+  {
+    id: 3,
+    title: "DO NOT BE DRUNK WITH WINE",
+    introscripture: (
+      <>
+        <strong>
+          EPHESIANS 5:18 (KJV)
+          <br />
+          And be not drunk with wine, wherein is excess; but be filled with the
+          Spirit;
+        </strong>
+      </>
+    ),
+    intropara: (
+      <>
+        One of the most controversial topics discussed by believers in the body
+        of Christ is the question of alcohol intake. Many believers have genuine
+        questions about whether or not a Christian should consume alcoholic
+        drinks. . .
+      </>
+    ),
+    fullentry: (
+      <>
+        One of the most controversial topics discussed by believers in the body
+        of Christ is the question of alcohol intake. Many believers have genuine
+        questions about whether or not a Christian should consume alcoholic
+        drinks. A popular argument is that the mere intake of alcoholic
+        beverages is not necessarily a sin, but rather the resultant
+        intoxication is the actual issue. This claim is often supported by the
+        above scripture (Ephesians 5:18), with many arguing that the specific
+        wording “do not be drunk” does not mean one should not drink at all, but
+        rather must simply avoid getting drunk. They interpret Paul’s writing to
+        mean that alcohol intake should be managed so that it is not abused.{" "}
+        <br />
+        <br />
+        Although these are genuine questions that need to be addressed, the
+        truth is that the Apostle Paul in Ephesians chapter 5 was in no way
+        directly addressing this matter. Bible readers may come to a somewhat
+        inaccurate conclusion if this scripture is not interpreted in context.
+        To understand this passage, a historical background of the writer is
+        crucial. <br /> <br />
+        The Apostle Paul was in prison in Rome when he wrote the letter to the
+        Ephesians. It is speculated to have been between AD 60 and AD 62. In
+        fact, his writings in this period are often referred to as the Prison
+        Epistles because during this spell of imprisonment, the Apostle Paul
+        wrote to multiple other churches, including letters to the Philippians,
+        Colossians and the letter to Philemon. <br />
+        <br />
+        During this period, the people in Rome and Ephesus worshipped a god
+        called Bacchus. According to the Romans, Bacchus was the god of wine,
+        revelry, and fertility, a similitude of the famous Greek god Dionysus,
+        who was the god of winemaking, ecstasy, theatre, and orchards. The
+        worship of Bacchus was accompanied by huge festival celebrations, which
+        included extreme ecstatic dances, sex orgies, uncontrolled wine
+        drinking, debauchery, and many other evil acts. Paul had witnessed these
+        acts in Rome and had also heard of these practices amongst the
+        Ephesians. This was popularly known historically as the Bacchanalian
+        era. <br />
+        <br />
+        The average partaker of this worship would be completely drunk to the
+        point where the wine controlled them, and would at that point, be
+        ushered into practices such as sex orgies, ritual initiations and many
+        others. It was believed that citizens should be extremely drunk with
+        wine at least once a year to appease the god Bacchus. This is what the
+        Apostle Paul referred to as the unfruitful works of darkness in the
+        early scriptures. <br />
+        <br />
+        <strong>
+          And have no fellowship with the unfruitful works of darkness, but
+          rather reprove them. For it is a shame even to speak of those things
+          which are done of them in secret. But all things that are reproved are
+          made manifest by the light: for whatsoever doth make manifest is
+          light. (Ephesians 5:11) KJV.{" "}
+        </strong>
+        <br />
+        <br />
+        The impact of this worship influenced those who were drunk to speak
+        things they did not understand and act uncontrollably because of the
+        wine. One other common effect of drinking was that it caused a lot of
+        jesting (cracking jokes) among the partakers. They would be so
+        overfilled with wine that they would lack consciousness of the reality
+        of life outside those walls. Apostle Paul listed some of the negative
+        effects of these practices in the context of the scripture. <br />
+        <br />
+        <strong>
+          Be ye therefore followers of God, as dear children; And walk in love,
+          as Christ also hath loved us, and hath given himself for us an
+          offering and a sacrifice to God for a sweet-smelling savour. But
+          fornication, and all uncleanness, or covetousness, let it not be once
+          named among you, as becometh saints; Neither filthiness, nor foolish
+          talking, nor jesting, which are not convenient: but rather giving of
+          thanks. For this ye know, that no whoremonger, nor unclean person, nor
+          covetous man, who is an idolater, hath any inheritance in the kingdom
+          of Christ and of God. (Ephesians 5:1-5) KJV.{" "}
+        </strong>
+        <br />
+        <br />
+        Unfortunately, Apostle Paul had learned that some of the saints in
+        Ephesus were occasionally indulging in those practices in secret, and
+        was hence addressing the issue. Although those specific festivals were
+        not necessarily celebrated in Ephesus, there were occasional excessive
+        intakes of alcohol, causing some believers to live a dissolute life.{" "}
+        <br />
+        <br />
+        In his letter, Paul rebuked the saints in Ephesus for engaging in these
+        practices, because they were the acts of men who acted foolishly.
+        According to Paul, such acts only left them ignorant of God’s will. That
+        was not God’s desire for His church, and these acts clearly impeded
+        their understanding of His will. <br />
+        <br />
+        <strong>
+          See then that ye walk circumspectly, not as fools, but as wise,
+          Redeeming the time, because the days are evil. Wherefore be ye not
+          unwise, but understanding what the will of the Lord is. (Ephesians
+          5:15-17) KJV.{" "}
+        </strong>
+        <br />
+        <br />
+        It was on this premise that the Apostle Paul commanded the church not to
+        be drunk with wine, but rather to be filled with the Spirit. Paul was
+        not instructing the church to manage their intake of alcohol, nor was he
+        asking them to refrain from being drunk with wine; rather, he was
+        commanding them to completely replace drunkenness with being filled with
+        the Spirit. Apostle Paul was in no way encouraging the intake of
+        alcohol; he was strongly of the view that it was better to be filled
+        with the Spirit. <br />
+        <br />
+        The effects of being filled with the Spirit were better than being drunk
+        with wine, because the former led to a life characterised by being full
+        of God. Some effects of the filling of the Spirit include singing and
+        making melody in your hearts, being thankful to God at all times,
+        speaking to yourself in psalms, as well as many other exploits recorded
+        in the scriptures. <strong>(See Ephesians 5:19-21) </strong>
+        . In certain instances, when believers are filled with the Spirit and
+        express some of its effects, the outlook is similar to people drunk with
+        wine. The reason for this is that both the Spirit and wine completely
+        influence a person to act in a way that they would not normally act.
+        This is evidenced in Acts chapter 2 on the day of Pentecost. When the
+        believers were filled with the Spirit, they began to speak with an
+        uncommon language, which resembled foolish talk to the bystanders who
+        mocked them and assumed that they were drunk with wine. <br />
+        <br />
+        <strong>
+          Others mocking said, These men are full of new wine. But Peter,
+          standing up with the eleven, lifted up his voice, and said unto them,
+          Ye men of Judaea, and all ye that dwell at Jerusalem, be this known
+          unto you, and hearken to my words: For these are not drunken, as ye
+          suppose, seeing it is but the third hour of the day. (Acts 2:13-15)
+          KJV.{" "}
+        </strong>
+        <br />
+        <br />
+        In conclusion, we have seen that the Apostle Paul commands believers in
+        Christ to be filled with the Spirit consistently rather than be drunk
+        with wine. Amen.
+      </>
+    ),
+    img: "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesispic.webp",
+    notextimg:
+      "https://d14n4fsapeewqj.cloudfront.net/devotionals/exegesispicturee.webp",
+    link: "/donotbedrunk",
+    slug: "donotbedrunk",
+    imgname: "devotional img",
+    provided: (
+      <>
+        <h3>Scriptural References:</h3>
+        1. <strong> Ephesians 5:19-21 (KJV) -</strong> Speaking to yourselves in
+        psalms and hymns and spiritual songs, singing and making melody in your
+        heart to the Lord; Giving thanks always for all things unto God and the
+        Father in the name of our Lord Jesus Christ; Submitting yourselves one
+        to another in the fear of God.
+      </>
+    ),
+  },
 ];
